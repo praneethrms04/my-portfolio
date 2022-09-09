@@ -1,14 +1,21 @@
 import "./HeroImg2styles.css";
 
-const HeroImg2 = () => {
-  return (
-    
-<div className="content">
-<h1>Tgis is a heading</h1>
-        <p>This is a paragraph</p>
-</div>
-      
-  );
-};
+import React, { Component } from "react";
+
+export class HeroImg2 extends Component {
+  render() {
+    return (
+      <div className="hero-img">
+        <div className="heading">
+          <h1>{this.props.heading}</h1>
+          <p>{this.props.text}</p>
+          
+        </div>
+      </div>
+    );
+  }
+}
 
 export default HeroImg2;
+
+
