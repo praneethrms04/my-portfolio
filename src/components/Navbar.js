@@ -27,18 +27,7 @@ const Navbar = () => {
       <Link to="/">
         <h1>Portfolio</h1>
       </Link>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
+     
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
           <Link to="/">
