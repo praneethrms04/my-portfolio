@@ -27,18 +27,18 @@ const Navbar = () => {
       <Link to="/">
         <h1>Portfolio</h1>
       </Link>
-     
+     <div class="nav-container red topBotomBordersOut">
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
           <Link to="/">
-            <FaHome className="mb-2" size={25} style={{ color: "orange" }} />
+            <FaHome className="mb-2 me-1" size={25} style={{ color: "orange" }} />
             Home
           </Link>
         </li>
         <li>
           <Link to="/projects">
             <FaProjectDiagram
-              className="mb-2"
+              className="mb-2 me-1"
               size={25}
               style={{ color: "orange" }}
             />
@@ -48,7 +48,7 @@ const Navbar = () => {
         <li>
           <Link to="/about">
             <FaSlideshare
-              className="mb-2"
+              className="mb-2 me-1"
               size={25}
               style={{ color: "orange" }}
             />
@@ -58,7 +58,7 @@ const Navbar = () => {
         <li>
           <Link to="/contact">
             <FaCommentDots
-              className="mb-2"
+              className="mb-2 me-1"
               size={25}
               style={{ color: "orange" }}
             />
@@ -66,11 +66,12 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      </div>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaBars size={25} style={{ color: "#fff" }} />
-        ) : (
           <FaTimes size={25} style={{ color: "#fff" }} />
+        ) : (
+          <FaBars size={25} style={{ color: "#fff" }} />
         )}
       </div>
     </div>

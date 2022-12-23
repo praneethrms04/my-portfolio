@@ -4,8 +4,6 @@ import Navbar from "../components/Navbar"
 import Work from "../components/Work"
 
 
-
-
 const Projects = () => {
   return (
     <div>

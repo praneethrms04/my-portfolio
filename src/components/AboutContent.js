@@ -1,37 +1,31 @@
-import { Link } from "react-router-dom"
-import "./AboutContentStyles.css"
-import Reactimg1 from "../images/Reactimg1.png"
-import Reactimg2 from "../images/Reactimg2.png"
+import { Link } from "react-router-dom";
+import computerImg from "../assets/computer.gif";
+import "./AboutContentStyles.css";
 
 const AboutContent = () => {
   return (
-    <div className="about">
-    <div className="left">
-        <h1>Who Am I ?</h1>
-        <p>I am react front-end developer. I create responsive create websites for my clients.</p>
-        <Link to='/contact'>
-            <button type="button" className="btn btn-outline-warning text-danger" >CONTACT</button>
-        </Link>
-    </div>
-    <div className="right">
-        <div className="img-container">
-            <div className="img-stack top">
-                <img src={Reactimg2} 
-                className="img"
-                alt="react-img1" />
-                
-            </div>
-            <div className="img-stack bottom">
-                <img src={Reactimg1} 
-                className="img"
-                alt="react-img1" />
-                
-            </div>
+    <div className="row">
+      <div className="col">
+        <h1 className="text-center">
+          Who Am I <span className="text-danger">?</span>
+        </h1>
+        <p className="word">
+          I'm full stack developer. I worked on various projects related to the
+          software domain which provided me a great deal of technical exposure
+          along with the importance of working in a team and the value of client
+          satisfaction.
+        </p>
+        <div className="text-center me-3">
+          <Link to="/contact">
+            <button type="button">CONTACT</button>
+          </Link>
         </div>
+      </div>
+      <div className="col">
+        <img src={computerImg} alt="img" className="ms-5" width="70%" />
+      </div>
     </div>
-      
-    </div>
-  )
-}
+  );
+};
 
-export default AboutContent
+export default AboutContent;

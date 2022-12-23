@@ -1,18 +1,18 @@
-import AboutContent from "../components/AboutContent"
 import Footer from "../components/Footer"
 import HeroImg2 from "../components/HeroImg2"
 import Navbar from "../components/Navbar"
+import Form from "../components/Form"
 
 
-const About = () => {
+const Contact = () => {
   return (
     <div>
       <Navbar />
-      <HeroImg2  heading="ABOUT" text ="I am a friendly Front-end Developer"  />
-      <AboutContent />
+      <HeroImg2  heading="CONTACT" text ="Let's have a chat..."  />
+      <Form />
       <Footer />
     </div>
   )
 }
 
-export default About
+export default Contact

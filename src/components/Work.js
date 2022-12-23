@@ -5,6 +5,7 @@ import ProjectCardData from "./WorkCardData";
 
 
 const Work = () => {
+  // let result = item.text.substring(1, 4);
   return (
     <div className="work-container">
         <h1 className="project-heading">Projects</h1>
@@ -16,7 +17,7 @@ const Work = () => {
                     <WorkCard key={index}
                     imgsrc ={item.imgsrc}
                     title ={item.title}
-                    text ={item.text}
+                    text ={(item.text.substring(0,70))}
                     view = {item.view}
                     source = {item.source}
                      />

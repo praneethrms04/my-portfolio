@@ -7,9 +7,11 @@ export class HeroImg2 extends Component {
     return (
       <div className="hero-img">
         <div className="heading">
-          <h1 className="display-1 fw-bold">{this.props.heading}</h1>
-          <p className="fw-bold">{this.props.text}</p>
-          
+          <div className="content mt-5">
+            <h2>{this.props.heading}</h2>
+            <h2>{this.props.heading}</h2>
+          </div>
+            <p className="mt-5">{this.props.text}</p>
         </div>
       </div>
     );
@@ -17,5 +19,3 @@ export class HeroImg2 extends Component {
 }
 
 export default HeroImg2;
-
-
