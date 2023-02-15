@@ -4,6 +4,7 @@ import "./FormStyles.css";
 const Form = () => {
   const navigate = useNavigate()
   const submitHandler =()=>{
+    
     alert("You have successfully submitted...Go to Home")
     navigate('/')
   }

@@ -1,10 +1,9 @@
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import linkedin from ".././assets/linkedin.svg";
-import dial from ".././assets/dial.svg";
-import location from ".././assets/location.svg";
-import mail from ".././assets/mail.svg";
-
+import linkedin from "../../assets/linkedin.svg";
+import dial from "../../assets/dial.svg";
+import location from "../../assets/location.svg";
+import mail from "../../assets/mail.svg";
 
 import "./Footerstyles.css";
 
@@ -28,8 +27,10 @@ const Footer = () => {
           </div>
           <div className="email">
             <h4>
-             <img src={mail} alt="mail" />
-             <a href="mailto:praneethrms04@gmail.com">praneethrms04@gmail.com</a>
+              <img src={mail} alt="mail" />
+              <a href="mailto:praneethrms04@gmail.com">
+                praneethrms04@gmail.com
+              </a>
             </h4>
           </div>
         </div>
