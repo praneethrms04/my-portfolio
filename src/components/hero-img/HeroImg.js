@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
 import IntroImg from "../../images/Introimg.png";
-import Projects from "../../pages/Projects";
-import Contact from "../../pages/Contact";
+
 import "./HeroImgstyles.css";
 
 const HeroImg = () => {
@@ -12,8 +10,7 @@ const HeroImg = () => {
       </div>
       <div className="content">
         <p className="fs-2 ">
-          {" "}
-          <p>I 'm</p>{" "}
+          <p>I 'm</p>
           <div className="fw-bolder waviy ">
             <span style={{ "--i": "1" }}>P</span>
             <span style={{ "--i": "2" }}>r</span>
@@ -25,18 +22,12 @@ const HeroImg = () => {
             <span style={{ "--i": "8" }}>h</span>
           </div>
         </p>
-        <h1 className="animate-charcter">Full Stack Developer</h1>
+        <h1 className="animate-charcter">Frontend Developer</h1>
         <div>
-          <button type="button" className="button-contact">
-            <Link to="/projects" element={<Projects />}>
-              Projects
-            </Link>
-          </button>
-
-          <button type="button" className="button-contact">
-            <Link to="/contact" element={<Contact />}>
-              Contact
-            </Link>
+          <button type="button" className="button-resume">
+            <a href="https://drive.google.com/file/d/1OM92V4g0F8OpdgwlbBndbpOXlJvk0n6r/view?usp=sharing">
+              Download Resume
+            </a>
           </button>
         </div>
       </div>

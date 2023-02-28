@@ -6,7 +6,6 @@ const Work = () => {
   // let result = item.text.substring(1, 4);
   return (
     <div className="work-container">
-      <h1 className="project-heading">Projects</h1>
       <div className="project-container">
         {ProjectCardData.map((item, index) => {
           return (
@@ -14,7 +13,7 @@ const Work = () => {
               key={index}
               imgsrc={item.imgsrc}
               title={item.title}
-              text={item.text.substring(0, 70)}
+              // text={item.text.substring(0, 70)}
               view={item.view}
               source={item.source}
             />

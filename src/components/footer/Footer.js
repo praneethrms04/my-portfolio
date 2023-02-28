@@ -36,11 +36,8 @@ const Footer = () => {
         </div>
         <div className="right">
           <div className="about">
-            <h4>About me:</h4>
-            <p>
-              This is me Praneeth Kumar. I am intrested to build Mobile and Web
-              applications.
-            </p>
+            <h4>connect me:</h4>
+
             <div className="social-media">
               <Link to="https://github.com/praneethrms04">
                 <FaGithub

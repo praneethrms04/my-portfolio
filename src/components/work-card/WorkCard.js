@@ -1,3 +1,4 @@
+import { FaGithub } from "react-icons/fa";
 import "./WorkCardstyles.css";
 
 const WorkCard = (props) => {
@@ -10,6 +11,9 @@ const WorkCard = (props) => {
           </div>
         </div>
       </div>
+          <div>
+            {props.text}
+          </div>
       <div class="text-container">
         <h3>{props.title}</h3>
         <div>
@@ -18,7 +22,10 @@ const WorkCard = (props) => {
               <button type="button">view</button>
             </a>
             <a href={props.source}>
-              <button type="button">source</button>
+              <button type="button">
+                <FaGithub size={15} style={{ marginRight: "1px" }} />
+                code
+              </button>
             </a>
           </div>
         </div>

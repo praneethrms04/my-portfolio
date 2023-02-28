@@ -5,19 +5,18 @@
   padding: 1rem;
   position: fixed;
   width: 100%;
-  height: 90px;
+  height: 65px;
   z-index: 10;
 }
+
+.portfolio:hover {
+  color: yellow;
+}
 .header-bg {
-  background-color: rgba(0, 0, 0, 0.85);
+  /* background-color: rgba(0, 0, 0, 0.85); */
+  background-color: #443c68;
   transition: 0.5s;
 }
-/* a {
-    color: #FFF;
-  }
-  a:hover {
-     color: rgb(26, 255, 0)
-  } */
 
 .nav-menu {
   display: flex;
@@ -102,33 +101,30 @@ div.topBotomBordersOut a:hover:after {
     display: initial;
   }
   div.topBotomBordersOut a:before,
-div.topBotomBordersOut a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
-}
+  div.topBotomBordersOut a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+  }
 
-div.topBotomBordersOut a:before {
-  top: 0px;
-  transform: translateY(10px);
-}
+  div.topBotomBordersOut a:before {
+    top: 0px;
+    transform: translateY(10px);
+  }
 
-div.topBotomBordersOut a:after {
-  bottom: 0px;
-  transform: translateY(-10px);
-}
+  div.topBotomBordersOut a:after {
+    bottom: 0px;
+    transform: translateY(-10px);
+  }
 
-div.topBotomBordersOut a:hover:before,
-div.topBotomBordersOut a:hover:after {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-  
- 
+  div.topBotomBordersOut a:hover:before,
+  div.topBotomBordersOut a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

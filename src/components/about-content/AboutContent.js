@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import computerImg from "../../assets/computer.gif"
+import computerImg from "../../assets/computer.gif";
 import "./AboutContentStyles.css";
 
 const AboutContent = () => {
@@ -10,10 +10,10 @@ const AboutContent = () => {
           Who Am I <span className="text-danger">?</span>
         </h1>
         <p className="word">
-          I'm Praneeth kumar. I worked on various projects related to the
-          software domain which provided me a great deal of technical exposure
-          along with the importance of working in a team and the value of client
-          satisfaction.
+          Dynamic and innovative Front-end Developer with a strong understanding
+          of web development concepts. Proficient in React, HTML, CSS, and
+          JavaScript. Experienced in using Redux,Node.js, and Express.js
+          .Committed to delivering high- quality and scalable web solutions.
         </p>
         <div className="text-center me-3">
           <Link to="/contact">
